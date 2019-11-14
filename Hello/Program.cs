@@ -10,8 +10,7 @@ namespace hello
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Raspberry Pi!");
-            IBootstrap
-            Pi.Init<>();
+            Console.WriteLine(Pi.Info);
             var sensor = new Sensor();
             Console.WriteLine("--- Reading Pins --- Press X To Quit ---");
             var pressed = Console.ReadKey();
@@ -27,11 +26,9 @@ namespace hello
 
     class Sensor
     {
-        private IGpioController gpioController;
         public Sensor()
         {
             Console.WriteLine("Setting up GPIO pin controller.");
-            gpioController = GpioController.Instance;
         }
         public void Get(int pin) => Console.WriteLine($"Value from pin {pin}: {Read(pin)}");
 
@@ -39,9 +36,9 @@ namespace hello
         {
             GpioPinValue status;
             Console.WriteLine($"Reading pin {(Pinout)pin}");
-            var signal = gpioController.OpenPin(pin);
-            status = signal.Read();
-            return status.ToString();
+            //var signal = gpioController.OpenPin(pin);
+            //status = signal.Read();
+            return "yes";// status.ToString();
         }
     }
 
