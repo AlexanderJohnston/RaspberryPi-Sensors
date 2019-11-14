@@ -1,0 +1,11 @@
+/home/pi/hello/bin/Debug/netcoreapp3.0/hello
+/home/pi/hello/bin/Debug/netcoreapp3.0/hello.deps.json
+/home/pi/hello/bin/Debug/netcoreapp3.0/hello.runtimeconfig.json
+/home/pi/hello/bin/Debug/netcoreapp3.0/hello.runtimeconfig.dev.json
+/home/pi/hello/bin/Debug/netcoreapp3.0/hello.dll
+/home/pi/hello/bin/Debug/netcoreapp3.0/hello.pdb
+/home/pi/hello/obj/Debug/netcoreapp3.0/hello.csprojAssemblyReference.cache
+/home/pi/hello/obj/Debug/netcoreapp3.0/hello.AssemblyInfoInputs.cache
+/home/pi/hello/obj/Debug/netcoreapp3.0/hello.AssemblyInfo.cs
+/home/pi/hello/obj/Debug/netcoreapp3.0/hello.dll
+/home/pi/hello/obj/Debug/netcoreapp3.0/hello.pdb
