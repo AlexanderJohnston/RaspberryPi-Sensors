@@ -17,6 +17,7 @@ namespace hello
             do
             {
                 Console.WriteLine(pressed.KeyChar);
+                sensor.Get(6);
                 sensor.Get(7);
                 pressed = Console.ReadKey();
             } while (pressed.Key != ConsoleKey.X);
