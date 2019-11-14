@@ -1,8 +1,7 @@
 using System;
 using System.Threading;
-using Bifrost.Devices.Gpio;
-using Bifrost.Devices.Gpio.Abstractions;
-using Bifrost.Devices.Gpio.Core;
+using Unosquare.RaspberryIO;
+using Unosquare.RaspberryIO.Abstractions;
 
 namespace hello
 {
@@ -11,6 +10,8 @@ namespace hello
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Raspberry Pi!");
+            IBootstrap
+            Pi.Init<>();
             var sensor = new Sensor();
             Console.WriteLine("--- Reading Pins --- Press X To Quit ---");
             var pressed = Console.ReadKey();

@@ -5,12 +5,12 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
  <ItemGroup>
-    <PackageReference Include="Bifrost.Devices.Gpio" Version="0.0.2" />
-    <PackageReference Include="Bifrost.Devices.Gpio.Abstractions" Version="0.0.1" />
-    <PackageReference Include="Bifrost.Devices.Gpio.Core" Version="0.0.1" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.0-preview1-*" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.0-preview1-*" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.0.0-preview1-*" />
+    <PackageReference Include="Unosquare.Raspberry.Abstractions" Version="0.4.0" />
+    <PackageReference Include="Unosquare.Raspberry.IO" Version="0.27.0" />
+    <PackageReference Include="Unosquare.RaspberryIO.Peripherals" Version="0.5.0" />
  </ItemGroup>
 
 </Project>
