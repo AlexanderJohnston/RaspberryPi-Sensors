@@ -14,12 +14,12 @@ namespace hello
             var sensor = new Sensor();
             Console.WriteLine("--- Reading Pins --- Press X To Quit ---");
             var pressed = Console.ReadKey();
-            while (pressed.Key != ConsoleKey.X)
+            do
             {
                 Console.WriteLine(pressed.KeyChar);
                 sensor.Get(7);
-                Thread.Sleep(500);
-            }
+                pressed = Console.ReadKey();
+            } while (pressed.Key != ConsoleKey.X);
         }
     }
 
